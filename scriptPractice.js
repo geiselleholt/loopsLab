@@ -1,4 +1,3 @@
-
 // EXAMPLE:
 // for (initialization; condition; afterthought) {
 // 	statements
@@ -23,12 +22,12 @@
 // for (let i = 2; i <= 10; i +=2) {
 // 	console.log(i);
 // }
-	
+
 // Output multiples of 3, starting at 6 and ending at 60.
 // for (let i = 3; i <= 60; i +=3) {
 // 	console.log(i);
 // }
-	
+
 // Output an increasing number of # symbols, from 1 to 7, as shown below.
 // let hash = "";
 
@@ -36,7 +35,6 @@
 // 	hash += '#'
 // 	console.log(hash);
 // }
-
 
 // Print “prime” for all prime numbers.
 // Print “even” for all even numbers.
@@ -130,7 +128,7 @@
 // 	}
 
 // 	console.log(x);
-	
+
 // }
 
 // Log integers in multiples of 3 as long as they are less than 35.
@@ -155,7 +153,6 @@
 // All other integers should not be output.
 // Print all prime numbers between 0 and 20.
 
-
 // DO WHILE LOOP:
 // ALWAYS run the code at least once
 // let x = 10;
@@ -167,7 +164,7 @@
 
 // LABELED STATEMENTS: LABELED LOOPS
 // myLoop: while (condition) {
-	// do the things
+// do the things
 // }
 
 // -WITH BREAK control flow statement
@@ -209,3 +206,33 @@
 // 	}
 // }
 // }
+// const str = "Hello World";
+// let newStr = "";
+// for (let i = 0; i < str.length; i++) {
+//   if (str[i] == "l") {
+//     continue;
+//   }
+
+//   newStr += str[i];
+// }
+// console.log(newStr);
+
+
+
+const str = "Hello World";
+
+for (const i in str) {
+	if (str[i] == "l") {
+		continue;
+	}
+
+	console.log(str[i]);
+}
+
+for (const c of str) {
+	if (c == "l") {
+		continue;
+	}
+
+	console.log(c);
+}

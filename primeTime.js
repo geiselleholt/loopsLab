@@ -5,3 +5,18 @@
 // As soon as you find the prime number, log that number and exit the loop.
 // Continuing with the example above, if n is equal to 4, your loop should log 5. Similarly, if n is 5, it should log 7, and if n is 9, it should log 11. Test your loop with higher numbers and reference an online prime number table to determine the accuracy of your code.
 // Be careful! If you set n to a number too large, your loop could take a long time to process.
+
+let n = 100;
+
+for (let i = n; ; i++) {
+  if (i < 2) {
+      console.log(`The next prime number is 2`);
+      break
+  } else if (i == 2) {
+      console.log(`The next prime number is 3`);
+      break
+  } else if (i % 2 !== 0 && i % 3 !== 0) {
+    console.log(`The next prime number is ${i}`);
+    break;
+  }
+}
